@@ -14,7 +14,7 @@ Function Update-SingleScvmmBaseline{
         [Microsoft.UpdateServices.Internal.BaseApi.Update[]]$AllUpdates
     ) 
   
-    write-output "Starting Baseline '$BaselineName'" -foregroundcolor Green
+    write-output "Starting Baseline '$BaselineName'"
 
     $baseline = Get-SCBaseline -Name $BaseLineName 
     if($Baseline -eq $NULL){
